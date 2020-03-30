@@ -1,0 +1,79 @@
+#ust{
+    
+    color: rgb(255, 8, 0);
+    height: 15% ;
+    text-align: center;
+
+}
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+text-decoration: none;
+color: rgb(255,0,0);
+margin-left: 1%;
+margin-right: 13%;
+}
+li{
+    list-style: none;  
+}
+.baslik{
+    
+    text-align: right;
+    background-color: tomato;
+    color: rgb(255, 0, 0);
+}
+.baku1{
+    width: 45%;
+    height: 40%;
+margin-left: 25%;
+transform: 50%;
+}
+
+footer{
+    background-color: crimson;
+    height: 200PX;
+}
+body{
+    background-image: url(photos/lost_in_space-1920x1080.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.anakisim {
+    
+    height: 100%;
+}
+.bakim {
+    margin-left: 25%;
+    width: 45%;
+    align-content: center;
+    background-color: salmon;
+    color:purple;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#memleketimlogo{
+    
+    width:100px;
+    height: 100px;
+}
+#linkler{
+    text-align: left;    
+}
+#memleketimflag{
+    width: 120px;
+    height: 100px;
+}
+
+#footerkismi{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(135, 240, 94);
+}
+.insta-logo{
+    width: 45px;
+    height: 45px;
+    text-align: left;
+    margin-right:2%;
+}
