@@ -3,9 +3,10 @@
     <head>
         <title>Login</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">   
+        <link rel="icon" href="photos/hakkimda.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="login.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav id="ust" >
@@ -14,25 +15,43 @@
             <hr color="white">
             <ul class="nav justify-content-center " >
                 <li class="nav-item">
-                    <a class="nav-link" style="color:red;" href="hakkimda.html" target="_blank">Hakkımda</a>
+                    <a class="nav-link" style="color:red;" href="index.html">Hakkımda</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" style="color:red;" href="cv.html" target="_blank">CV</a>
+                    <a class="nav-link" style="color:red;" href="cv.html">CV</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" style="color:red;" href="memleketim.html" target="_blank">Memleketim</a>
+                    <a class="nav-link" style="color:red;" href="memleketim.html">Memleketim</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" style="color:red;" href="mirasimiz.html" target="_blank">Mirasımız</a>
+                    <a class="nav-link" style="color:red;" href="mirasimiz.html">Mirasımız</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" style="color:red;" href="iletisim.html" target="_blank">İletişim</a>
+                    <a class="nav-link" style="color:red;" href="iletisim.html">İletişim</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" style="color:red;" href="login.html" target="_blank">Login</a>
+                    <a class="nav-link" style="color:gold; background-color: rgb(112, 71, 33);" href="login.html">Login</a>
                   </li>
-    
             </ul>
-        </nav>
+          </ul>
+          </nav>
+            <hr color="white">
+            <br/>
+                  <div class="anakisim">
+                    <h1 style="font-size: 300%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; color: red  ;">Login</h1>
+                    <br/>
+                    <form action="login.php" method="POST" name="login" class="login-form" onsubmit="return loginKontrol()">
+                     E-Mail: <input type="text" name="email" id="e-mail" placeholder="b191210551@sakarya.edu.tr">
+                     <br/><br/>                    
+                     Parola: <input type="password" name="password" id="sifre" placeholder="123654" >
+                     <br/><br/>
+                    <input type="submit" name="submit" id="gonder" value="Submit">
+                    </form>
+                  </div><br/><br/>
+                  <footer>
+                    <p id="footerkismi">Ruhid Ibadlı ©</p>
+                </footer> 
+            
+        
     </body>
 </html>

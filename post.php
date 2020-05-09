@@ -9,18 +9,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"&&$_POST["email"]!="") {
   $surname = test_input($_POST["surname"]);
   $comment = test_input($_POST["comment"]);
   $gender = test_input($_POST["gender"]);
+  $secim=test_input($_POST["secim"]);
 
 
 
-  echo $name;
+  echo "Adı: ",$name;
   echo "<br>";
-  echo $surname;
+  echo "Soyadı: ",$surname;
   echo "<br>";
-  echo $email;
+  echo "E-Mail: ",$email;
   echo "<br>";
-  echo $comment;
+  echo "Yorumu: ",$comment;
   echo "<br>";
-  echo $gender;
+  echo "Cinsiyyeti: ",$gender;
+  echo "<br>";
+  echo "Seçimi: ",$secim;
   header("gonderildi");
 }
 

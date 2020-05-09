@@ -2,10 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="photos/hakkimda.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">   
         <title>Iletişim Sayfası</title>
         <script src="login.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav id="ust" >
@@ -14,46 +15,66 @@
             <hr color="white">
             <ul class="nav justify-content-center " >
                 <li class="nav-item">
-                    <a class="nav-link" style="color:red;" href="hakkimda.html" target="_blank">Hakkımda</a>
+                    <a class="nav-link" style="color:red;" href="index.html">Hakkımda</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" style="color:red;" href="cv.html" target="_blank">CV</a>
+                    <a class="nav-link" style="color:red;" href="cv.html">CV</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" style="color:red;" href="memleketim.html" target="_blank">Memleketim</a>
+                    <a class="nav-link" style="color:red;" href="memleketim.html">Memleketim</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" style="color:red;" href="mirasimiz.html" target="_blank">Mirasımız</a>
+                    <a class="nav-link" style="color:red;" href="mirasimiz.html">Mirasımız</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" style="color:red;" href="iletisim.html" target="_blank">İletişim</a>
+                    <a class="nav-link" style="color:gold; background-color: rgb(112, 71, 33);" href="iletisim.html">İletişim</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" style="color:red;" href="login.html" target="_blank">Login</a>
+                    <a class="nav-link" style="color:red;" href="login.html">Login</a>
                   </li>   
             </ul>
         </nav>
 
         <hr color="white">
+        <br/>
         <div class="anakisim">
-            <h1 style="font-size: 45px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; color: rgb(236, 15, 52);">Iletişim</h1>
+            <h1 style="font-size: 300%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; color: red;">Iletişim</h1>
+            <br/>
             <form name="iletisim" class="contact-form" action="post.php" method="POST" onsubmit="return validateForm()">
-                Name: <input type="text" name="name" id="isim" required>
+                Ad: <input type="text" name="name" id="isim">
                 <br><br>
-                Surname: <input type="text" name="surname" id="soyisim" required>
+                Soyad: <input type="text" name="surname" id="soyisim">
                 <br><br>
-                E-mail: <input type="text" name="email" id="e-mail" required>
+                E-mail: <input type="text" name="email" id="e-mail">
                 <br><br>
-                Comment: <textarea name="comment" rows="5" cols="40" id="yorum"></textarea>
+                Yorum: <textarea name="comment" rows="5" cols="40" id="yorum"></textarea>
                 <br><br>
-                Gender:
-                <input type="radio" name="gender" value="female" id="kadin">Female
-                <input type="radio" name="gender" value="male" id="erkek">Male
-                <input type="radio" name="gender" value="other" id="">Other
-                <br><br>
-                <input type="submit" name="submit" value="Submit"> 
+                <table style="margin-left: 30%;">
+                    <tr>
+                        <th>Bizi nasıl keşfettiniz?</th>
+                        <th>Cinsiyyet</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="secim" value="Proje" id="proje">Proje<br/>
+                            <input type="checkbox" name="secim" value="Arkadaşlarımdan" id="arkadaslarimdan">Arkadaşlarımdan<br/>
+                            <input type="checkbox" name="secim" value="Rastgele" id="rastgele">Rastgele<br/>
+                            <input type="checkbox" name="secim" value="Siteden" id="siteden">Siteden
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" value="female" id="kadin">Kadın</br>
+                            <input type="radio" name="gender" value="male" id="erkek">Erkek</br>
+                            <input type="radio" name="gender" value="other" id="baska" checked>Başka</br>
+                            
+                        </td>
+                    </tr>
+                </table><br/><br/>
+                <input type="submit" name="submit" value="Gönder"> 
+                <input type="reset" name="sifirla" value="Temizle">
+
             </form>
         </div>
+        <br/><br/>
         <footer>
             <p id="footerkismi">Ruhid Ibadlı ©</p>
             <a href="https://www.instagram.com/rooheed.001/?hl=tr" target="_blank" >
